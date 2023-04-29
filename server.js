@@ -1,7 +1,5 @@
 const express = require("express");
-const axios = require("axios");
-
-
+const { default: axios } = require("axios");
 const app = express();
 
 app.set("view engine", "ejs");
@@ -31,9 +29,9 @@ app.get("/", (req, res) =>{
                 genres: genresUpdated,
                 poster: posterUrl
             });
-    });
+        });
 
-    app.listen(process.env.PORT || 3000, () => {
+        app.listen(process.env.PORT || 3000, () => {
         console.log("server is running");
     });
         
