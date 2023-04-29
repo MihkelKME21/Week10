@@ -30,9 +30,7 @@ app.get("/", (req, res) =>{
                 poster: posterUrl
             });
         });
-
-        app.listen(process.env.PORT || 3000, () => {
-        console.log("server is running");
-    });
-        
 });
+            app.listen(process.env.PORT || 3000, ()=> {
+            console.log("server is running.");
+            });    
